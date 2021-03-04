@@ -110,10 +110,10 @@
   .showcase {
     height: 400px;
   }
-  -content {
+  .showcase-content {
     text-align: center;
   }
-  img {
+  .showcase-content img {
     display: none;
   }
 }
@@ -173,6 +173,7 @@ img {
   height: 100%;
   align-items: center;
   justify-content: center;
+  margin-top: 30px;
   margin-bottom: 10px;
 }
 
