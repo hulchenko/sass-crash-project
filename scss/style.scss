@@ -1,0 +1,84 @@
+@import "_config.scss"; // or @import "config" will work too.
+@import "_utilities.scss";
+@import "_buttons.scss";
+
+//* apply to every element on the page
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: $light-color;
+    font-family: $font-stack;
+    line-height: 1.6;
+    text-shadow: 1px 1px 2px #0e6cff;
+}
+
+img {
+    width: 30%;
+    box-shadow: 0 0 10px #66a0fd;
+}
+
+img:hover {
+    box-shadow: 0 0 10px indigo;
+}
+
+//Nesting elements within parent elements:
+.showcase {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,255,244,1) 100%);
+    color: white;
+    height: 100vh;
+
+    
+    &-content { //this equals to .showcase-content
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+
+        h1 {
+            font-size: 50px;
+            line-height: 1.2;
+        }
+
+        p {
+            margin: 20px 0;
+        }
+    }
+
+    nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        ul {
+            display: flex;
+            list-style: none;
+
+            li {
+                padding: 15px;
+            }
+        }
+        a:hover {
+            color: $secondary-color;
+        }
+    
+    }
+
+    a {
+        color: white;
+    }
+
+
+}
+
+
+
