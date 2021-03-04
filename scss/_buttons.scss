@@ -14,7 +14,7 @@
 
 .btn-primary {
     @extend %btn;
-    background-color: darken($primary-color, 1%); // lighten or darken functions are used to change color's brightness
+    background-color: darken($primary-color, 5%); // lighten or darken functions are used to change colors' brightness
 }
 
 .btn-secondary {

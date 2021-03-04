@@ -25,15 +25,11 @@ img {
     box-shadow: 0 0 10px #66a0fd;
 }
 
-img:hover {
-    box-shadow: 0 0 10px indigo;
-}
-
 //Nesting elements within parent elements:
 .showcase {
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(0,255,244,1) 100%);
-    color: white;
+    // background: $primary-color;
+    // color: set-text-color($primary-color);
+    @include set-background($primary-color);
     height: 100vh;
 
     
@@ -74,7 +70,7 @@ img:hover {
     }
 
     a {
-        color: white;
+        color: set-text-color($primary-color);;
     }
 
 

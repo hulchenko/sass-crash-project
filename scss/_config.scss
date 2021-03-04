@@ -7,6 +7,23 @@
 
 //repeatedly used variables:
 $light-color: #f4f4f4;
-$primary-color: #00fff4;
+//$primary-color: #00fff4;
+$primary-color: white;
 $secondary-color: indigo;
 $font-stack: Arial, Helvetica, sans-serif;
+
+//Create functions, setting font-color based on background-color:
+
+@function set-text-color($color) {
+    @if(lightness($color) > 70){
+        @return indigo;
+    }@else{
+        @return white;
+    }
+}
+
+//Substituting background and color parameters:
+@mixin set-background($color) {
+    background-color: $color;
+    color: set-test-color($color);
+}
