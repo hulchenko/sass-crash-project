@@ -17,40 +17,24 @@ body {
     background-color: $light-color;
     font-family: $font-stack;
     line-height: 1.6;
-    text-shadow: 1px 1px 2px #0e6cff;
 }
 
 img {
     width: 30%;
-    box-shadow: 0 0 10px #66a0fd;
+    box-shadow: 0 0 10px indigo;
 }
 
 //Nesting elements within parent elements:
 .showcase {
+    
     // background: $primary-color;
     // color: set-text-color($primary-color);
     @include set-background($primary-color);
-    height: 100vh;
-
+    height: 500px;
     
-    &-content { //this equals to .showcase-content
-        display: flex;
-        height: 100%;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 10px;
-
-        h1 {
-            font-size: 50px;
-            line-height: 1.2;
-        }
-
-        p {
-            margin: 20px 0;
-        }
-    }
-
+    
     nav {
+        
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -63,17 +47,31 @@ img {
                 padding: 15px;
             }
         }
+
+        a {
+            color: set-text-color($primary-color);
+        }
+    
         a:hover {
             color: $secondary-color;
         }
+
+        
     
     }
+    &-content { //this equals to .showcase-content
+        
+        display: flex;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
 
-    a {
-        color: set-text-color($primary-color);;
+        h1 {
+            font-size: 50px;
+            line-height: 1.2;
+        }
     }
-
-
 }
 
 

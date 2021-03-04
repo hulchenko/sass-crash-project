@@ -5,6 +5,86 @@
   overflow: auto;
 }
 
+.m-1 {
+  margin: 1rem;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+
+.p-1 {
+  padding: 1rem;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.m-2 {
+  margin: 2rem;
+}
+
+.my-2 {
+  margin: 2rem 0;
+}
+
+.p-2 {
+  padding: 2rem;
+}
+
+.py-2 {
+  padding: 2rem 0;
+}
+
+.m-3 {
+  margin: 3rem;
+}
+
+.my-3 {
+  margin: 3rem 0;
+}
+
+.p-3 {
+  padding: 3rem;
+}
+
+.py-3 {
+  padding: 3rem 0;
+}
+
+.m-4 {
+  margin: 4rem;
+}
+
+.my-4 {
+  margin: 4rem 0;
+}
+
+.p-4 {
+  padding: 4rem;
+}
+
+.py-4 {
+  padding: 4rem 0;
+}
+
+.m-5 {
+  margin: 5rem;
+}
+
+.my-5 {
+  margin: 5rem 0;
+}
+
+.p-5 {
+  padding: 5rem;
+}
+
+.py-5 {
+  padding: 5rem 0;
+}
+
 .btn-primary, .btn-secondary {
   display: inline-block;
   border-radius: 5px;
@@ -17,11 +97,13 @@
 }
 
 .btn-primary {
-  background-color: #f2f2f2;
+  background-color: #418bff;
+  color: #fff;
 }
 
 .btn-secondary {
-  background-color: indigo;
+  background-color: #ff8700;
+  color: #fff;
 }
 
 * {
@@ -38,35 +120,17 @@ body {
   background-color: #f4f4f4;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 1.6;
-  text-shadow: 1px 1px 2px #0e6cff;
 }
 
 img {
   width: 30%;
-  box-shadow: 0 0 10px #66a0fd;
+  box-shadow: 0 0 10px indigo;
 }
 
 .showcase {
-  background-color: white;
-  color: set-test-color(white);
-  height: 100vh;
-}
-
-.showcase-content {
-  display: flex;
-  height: 100%;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 10px;
-}
-
-.showcase-content h1 {
-  font-size: 50px;
-  line-height: 1.2;
-}
-
-.showcase-content p {
-  margin: 20px 0;
+  background-color: #0e6cff;
+  color: #fff;
+  height: 500px;
 }
 
 .showcase nav {
@@ -84,10 +148,23 @@ img {
   padding: 15px;
 }
 
-.showcase nav a:hover {
-  color: indigo;
+.showcase nav a {
+  color: #fff;
 }
 
-.showcase a {
-  color: indigo;
+.showcase nav a:hover {
+  color: #ff8700;
+}
+
+.showcase-content {
+  display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.showcase-content h1 {
+  font-size: 50px;
+  line-height: 1.2;
 }
