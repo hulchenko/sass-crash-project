@@ -1,4 +1,4 @@
-//For loop:
+<!-- For Loop: -->
 
 <style type="text/scss">
   @for $j from 1 through 6 {
@@ -14,7 +14,7 @@
 <p class="text-4">Hello</p>
 <p class="text-5">Hello</p>
 
-//OR
+<!-- OR -->
 
 <style type="text/scss">
   @for $i from 1 through 12 {
@@ -34,3 +34,63 @@
     width: 100%;
   }
 </style>
+
+<!-- For Each: -->
+<style>
+  @each $color in blue, red, green {
+    .#{$color}-text {
+      color: $color;
+    }
+  }
+</style>
+
+<!-- OR -->
+
+<style type="text/scss">
+  @each $color in blue, black, red {
+    .#{$color}-bg {
+      background-color: $color;
+    }
+  }
+
+  div {
+    height: 200px;
+    width: 200px;
+  }
+</style>
+
+<div class="blue-bg"></div>
+<div class="black-bg"></div>
+<div class="red-bg"></div>
+
+<!-- For Map: -->
+<style>
+  $colors: (
+    color1: blue,
+    color2: red,
+    color3: green,
+  );
+
+  @each $key, $color in $colors {
+    .#{$color}-text {
+      color: $color;
+    }
+  }
+</style>
+
+<!-- While Loop: -->
+<style type="text/scss">
+  $x: 1;
+  @while $x < 11 {
+    .text-#{$x} {
+      font-size: 15px * $x;
+    }
+    $x: $x + 1;
+  }
+</style>
+
+<p class="text-1">Hello</p>
+<p class="text-2">Hello</p>
+<p class="text-3">Hello</p>
+<p class="text-4">Hello</p>
+<p class="text-5">Hello</p>
